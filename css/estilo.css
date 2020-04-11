@@ -1,0 +1,196 @@
+/*
+* 
+* @author André Moura
+*/
+
+/* Layout
+-------------------------------------*/
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Barra de navegação
+-------------------------------------*/
+nav.navbar-transparente {
+	padding: 15px 0;
+	background: rgba(0,0,0,0.6);
+}
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #1ed760;
+}
+
+.navbar-light .navbar-toggler {
+	color: white;
+	border-color: rgba(255,255,255,0.5);
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Estrutura de conteúdos
+-------------------------------------*/
+#servicos h2, #servicos h3 {
+	color: #7c25f8;
+}
+
+#recursos h3 {
+	color: #9bf0e1;
+}
+
+.rotacao {
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/* Rodapé
+-------------------------------------*/
+footer {
+	background-color: black;
+	position: relative;
+}
+
+footer h4 {
+	color: #919496;
+	font-size: 0.75em;
+	font-weight: 900;
+	line-height: 1.4;
+	letter-spacing: .08em;
+}
+
+/* Tipografia
+-------------------------------------*/
+h1 {
+	letter-spacing: -0.04em;
+	line-height: 1.15;
+}
+
+h2, h3 {
+	letter-spacing: -0.04em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #1ED760;
+}
+
+.btn {
+	color: white;
+	font-size: 14px;
+	line-height: 1;
+	padding: 16px 48px 18px;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	transition-property: background-color, border-color, color, box-shadow, filter, -webkit-box-shadow, -webkit-filter;
+	transition-duration: .3s;
+	border-width: 0;
+	letter-spacing: 2px;
+	min-width: 160px;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn-green {
+	background-color: #1DB954;
+}
+
+.btn-green:hover {
+	background-color: #1ED760;
+}
+
+.btn-transparent, .btn-custom {
+	border: 2px solid white;
+	background-color: transparent;
+}
+
+.btn-transparent:hover {
+	background-color: white;
+	color: black;
+}
+
+.btn-custom:hover {
+	background-color: white;
+	color: #1ED760;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+/*// Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) {
+	h1 {
+		font-size: 3em !important;
+	}
+
+	.btn {
+		margin: 10px 15px;
+	}
+}
+
+/*// Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em !important;
+	}
+
+	.btn {
+		margin: 10px 15px;
+	}
+}
+
+/*// Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em !important;
+	}
+
+	.btn {
+		margin: 10px 15px;
+	}
+}
+
+/*// Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em !important;
+	}
+}
+
+/*// Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+
+}
